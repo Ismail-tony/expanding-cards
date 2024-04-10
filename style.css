@@ -24,7 +24,7 @@ body {
     background-repeat: no-repeat; 
     height: 80vh;
     border-radius: 50px;
-    color: #ea00d9	;
+    color: #fff	;
     cursor: pointer;
     flex: 0.5; /* The flex: 0.5 means that the panel will take 50% of the available space by 
     combining the flex-grow and flex-shrink properties  */
@@ -48,6 +48,7 @@ body {
 
 .panel.active h3 {
     opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
 }
 
 @media(max-width: 480px) { /* If the screen is less than 480px wide, set the font-size to 12px */
@@ -55,7 +56,7 @@ body {
         width: 100vw;
     }
 
-    .panel:nth-of-type(4), .panel:nth-of-type(5) { /* Select the 4th and 5th panel */
+    .panel:nth-of-type(5), .panel:nth-of-type(6), .panel:nth-of-type(7) { /* Select the 4th and 5th panel */
         display: none;
     }
 }
